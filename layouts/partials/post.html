@@ -69,11 +69,16 @@
       </div>
     </div>
   </div>  
-  {{ if not .Site.BuildDrafts }}
   <div class="post-comment">    
-    {{ template "_internal/disqus.html" . }}    
+    <script src="https://utteranc.es/client.js"
+        repo="ysyukr/postalk"
+        issue-term="pathname"
+        label="prople-kr"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script> 
   </div>
-  {{ end }}
   <div class="recommend-articles">
     {{ i18n "postRecommendArticles"}}
     <ul>
